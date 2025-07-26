@@ -1,0 +1,28 @@
+{
+  "medicos": [],
+  "pacientes": [],
+  "consultas": [],
+  "usuarios": [
+    {
+      "id": "1",
+      "tipo": "admin",
+      "nome": "Administrador",
+      "login": "admin",
+      "senha": "admin"
+    },
+    {
+      "id": "2",
+      "tipo": "paciente",
+      "nome": "Maria",
+      "login": "maria",
+      "senha": "5678"
+    },
+    {
+      "id": "3",
+      "tipo": "medico",
+      "nome": "Dr. João",
+      "login": "joao",
+      "senha": "1234"
+    }
+  ]
+}
