@@ -1,42 +1,20 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Login from "./pages/Login"
-import InicialAdmin from './pages/InicialAdmin'
-import Inicio from './pages/Inicio'
 import MedicoForm from './pages/Medico/MedicoForm'
 import PacienteForm from './pages/Paciente/PacienteForm'
 import ConsultaForm from './pages/Consulta/ConsultaForm'
 import MedicoList from './pages/Medico/MedicoList'
 import PacienteList from './pages/Paciente/PacienteList'
 import ConsultaList from './pages/Consulta/ConsultaList'
-import PrivateRoute from "./routes/PrivateRoute"
-import MenuGlobal from './components/Menu/MenuGlobal'
+import Inicial from './pages/Inicial'
+import Menu from './components/Menu/Menu'
 
 const App = () => {
   return (
      <BrowserRouter>
-      <MenuGlobal/>
+     <Menu/>
       <Routes>
-        <Route path="/" element={<Login />} />
-
-        <Route path="/inicio-admin" element={
-          <PrivateRoute tipoPermitido="admin">
-            <InicialAdmin />
-          </PrivateRoute>
-        } />
-
-        <Route path="/inicio" element={
-          <PrivateRoute tipoPermitido="medico">
-            <Inicio/>
-          </PrivateRoute>
-        } />
-
-        <Route path="/inicio" element={
-          <PrivateRoute tipoPermitido="paciente">
-            <Inicio />
-          </PrivateRoute>
-        } />
-        
+        <Route path="/" element={<Inicial />} />
         <Route path="/cadastrar-medico" element={<MedicoForm/>} />
         <Route path="/cadastrar-paciente" element={<PacienteForm />} />
         <Route path="/cadastrar-consulta" element={<ConsultaForm />} />

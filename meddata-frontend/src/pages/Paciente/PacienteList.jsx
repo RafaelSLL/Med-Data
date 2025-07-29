@@ -42,7 +42,7 @@ const PacienteList = () => {
           <h2
             className="mb-0 d-flex align-items-center"
             style={{
-              background: 'linear-gradient(to right, #769382, #C0C3B9)',
+              background: 'linear-gradient(to right, #6E85B7, #85a3d4ff)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
             }}
@@ -50,7 +50,7 @@ const PacienteList = () => {
             Lista de Pacientes
             <OverlayTrigger
               placement="right"
-              overlay={<Tooltip>Visualize, Edite ou Exclua pacientes</Tooltip>}
+              overlay={<Tooltip>Visualize, Edite ou Exclua Pacientes</Tooltip>}
             >
               <span className="ms-2" style={{ cursor: 'pointer' }}>
                 <FaQuestionCircle />
@@ -61,7 +61,7 @@ const PacienteList = () => {
           <Button
             as={Link}
             to="/cadastrar-paciente"
-            style={{ background: 'linear-gradient(to right, #769382, #C0C3B9)' }}
+            style={{ background: 'linear-gradient(to right, #6E85B7, #B2C2DB)', border: 'none' }}
           >
             <FaPlus className="me-2" /> Adicionar Paciente
           </Button>

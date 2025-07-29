@@ -46,7 +46,7 @@ const MedicoList = () => {
               <h2
                 className="mb-0 d-flex align-items-center"
                 style={{
-                  background: 'linear-gradient(to right, #769382, #C0C3B9)',
+                  background: 'linear-gradient(to right, #6E85B7, #85a3d4ff)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                 }}
@@ -65,7 +65,7 @@ const MedicoList = () => {
               <Button
                   as={Link}
                   to="/cadastrar-medico"
-                  style={{ background: 'linear-gradient(to right, #769382, #C0C3B9)' }}
+                  style={{ background: 'linear-gradient(to right, #6E85B7, #B2C2DB)', border: 'none' }}
                 >
                   <FaPlus className="me-2" /> Adicionar Médicos
                 </Button>
